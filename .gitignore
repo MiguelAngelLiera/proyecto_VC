@@ -207,7 +207,14 @@ marimo/_lsp/
 __marimo__/
 
 
-resources/
-/resources/
-*.png
+resources/hold/
+resources/test/
+resources/train/
 *.tar
+*zip
+# 1. Ignorar todos
+*.png
+
+# 2. Excepción: Salvar los que cumplan el patrón
+!hurricane-florence*.png
+.DS_Store
