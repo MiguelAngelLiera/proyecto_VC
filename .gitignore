@@ -212,9 +212,7 @@ resources/test/
 resources/train/
 *.tar
 *zip
-# 1. Ignorar todos
 *.png
-
-# 2. Excepción: Salvar los que cumplan el patrón
 !hurricane-florence*.png
+test.ipynb
 .DS_Store

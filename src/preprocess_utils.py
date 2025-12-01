@@ -8,6 +8,7 @@ import pickle
 from typing import Tuple, List, Dict
 
 # %%
+PATH = 'resources'
 CLASSES = {'un-classified': '4', 'destroyed': '3', 'major-damage': '2', 'minor-damage': '1', 'no-damage': '0'}
 
 def check_directories(path: str) -> Tuple[str]:
@@ -166,4 +167,3 @@ def cut_dataset(_path: str, percentage: float = 1/3):
             if c > threshold:
                 file_to_remove = os.path.join(step_path, file)
                 print(f'removing: {file_to_remove}')
-                os.remove(file_to_remove) 

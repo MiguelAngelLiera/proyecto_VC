@@ -95,7 +95,7 @@ def generate_prediction(combined_img_number: int):
     Args:
         combined_img_number (int): number of combined image to generate predictions.
     """
-    combined_img_name = combined_images[131]
+    combined_img_name = combined_images[combined_img_number]
     combined_path = COMBINED_IMG_PATH + combined_img_name
     post_img_name = combined_img_name.replace('combined', 'post')
 
