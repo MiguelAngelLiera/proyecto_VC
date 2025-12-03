@@ -105,7 +105,7 @@ def generate_prediction(combined_img_number: int):
     results = model(combined_img)
 
     img, mask = plot_bboxes(post_image, results, mask='colors')
-    cv2.imshow('img', img)
+    cv2.imshow(f'{combined_img_name}', img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
